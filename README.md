@@ -4,8 +4,6 @@ Windows Device Hook Library
 ## Sync Example
 ````cpp
 #include <iostream>
-#include <thread>
-#include <Windows.h>
 
 #include "WMHL/MouseHook.h"
 #include "WKHL/KeyboardHook.h"
