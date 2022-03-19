@@ -5,8 +5,8 @@ Windows Device Hook Library
 ````cpp
 #include <iostream>
 
-#include "WMHL/MouseHook.h"
-#include "WKHL/KeyboardHook.h"
+#include "WDHL/MouseHook.h"
+#include "WDHL/KeyboardHook.h"
 
 void MouseEvent(WMHL::EventType type, WMHL::EventData& data)
 {
