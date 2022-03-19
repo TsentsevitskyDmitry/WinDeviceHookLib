@@ -2,5 +2,6 @@
 
 namespace WDHL
 {
-    [[ noreturn ]] void BeginEventLoop();
+    void BeginEventLoop(const bool &condition);
+    void BeginEventLoop();
 }

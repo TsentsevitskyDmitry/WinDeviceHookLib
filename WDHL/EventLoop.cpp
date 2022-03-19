@@ -2,11 +2,17 @@
 
 #include "EventLoop.h"
 
-void WDHL::BeginEventLoop()
+void WDHL::BeginEventLoop(const bool& condition)
 {
-    while(true)
+    while(condition)
     {
         MSG msg;
         PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE);
     }
+}
+
+void WDHL::BeginEventLoop()
+{
+    bool endless = true;
+    WDHL::BeginEventLoop(endless);
 }
