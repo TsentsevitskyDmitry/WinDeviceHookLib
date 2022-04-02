@@ -13,6 +13,6 @@ void WDHL::BeginEventLoop(const bool& condition)
 
 void WDHL::BeginEventLoop()
 {
-    bool endless = true;
+    const bool endless = true;
     WDHL::BeginEventLoop(endless);
 }

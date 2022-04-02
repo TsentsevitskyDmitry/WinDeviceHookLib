@@ -38,8 +38,9 @@ namespace WMHL
             case WM_RBUTTONDOWN:
                 intance->m_callback(EventType::RBUTTONDOWN, data);
                 break;
-            default:
-                return CallNextHookEx(nullptr, nCode, wParam, lParam);
+            case WM_MOUSEMOVE:
+                intance->m_callback(EventType::MOUSEMOVE, data);
+                break;
             }
         }
 

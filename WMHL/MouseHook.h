@@ -8,7 +8,8 @@ namespace WMHL
     enum class EventType
     {
         RBUTTONDOWN,
-        LBUTTONDOWN
+        LBUTTONDOWN,
+        MOUSEMOVE
     };
 
     struct EventData
